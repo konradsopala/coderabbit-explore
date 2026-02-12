@@ -7,7 +7,7 @@ import {
   placeFood,
   setDirection,
   step,
-} from "../src/snake.js";
+} from "../lib/snake.js";
 
 function constantRng(value) {
   return () => value;

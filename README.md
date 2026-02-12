@@ -1,16 +1,22 @@
-# Snake (Classic)
+# Snake (Next.js)
 
-A minimal classic Snake implementation with no external dependencies.
+Classic Snake rewritten as a minimal Next.js app.
 
-## Run
+## Install
 
 ```bash
-npm run start
+npm install
 ```
 
-Then open <http://localhost:5173>.
+## Run (dev)
 
-## Test
+```bash
+npm run dev
+```
+
+Navigate to <http://localhost:3000>.
+
+## Test core logic
 
 ```bash
 npm test
@@ -19,8 +25,9 @@ npm test
 ## Manual verification checklist
 
 - Arrow keys and WASD move snake in expected direction.
-- Reverse-direction input is ignored (cannot instantly turn into itself).
+- On-screen buttons move snake correctly on mobile/touch.
+- Reverse-direction input is ignored.
 - Eating food grows snake and increments score.
 - Hitting wall or snake body triggers game over.
 - Pause/resume works via button and space bar.
-- Restart resets score, state, and starts a new loop.
+- Restart resets score and game state.
