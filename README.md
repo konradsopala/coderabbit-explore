@@ -1,26 +1,36 @@
-# Snake (Classic)
+# Snake (Python)
 
-A minimal classic Snake implementation with no external dependencies.
+Classic Snake rewritten in modern Python (3.13+), with a Tkinter UI and tested core game logic.
+
+## Requirements
+
+- Python 3.13+
+
+## Install (dev)
+
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install -e .[dev]
+```
 
 ## Run
 
 ```bash
-npm run start
+python -m snake.app
 ```
 
-Then open <http://localhost:5173>.
-
-## Test
+## Test core logic
 
 ```bash
-npm test
+pytest
 ```
 
 ## Manual verification checklist
 
 - Arrow keys and WASD move snake in expected direction.
-- Reverse-direction input is ignored (cannot instantly turn into itself).
+- Reverse-direction input is ignored.
 - Eating food grows snake and increments score.
 - Hitting wall or snake body triggers game over.
 - Pause/resume works via button and space bar.
-- Restart resets score, state, and starts a new loop.
+- Restart resets score and game state.
