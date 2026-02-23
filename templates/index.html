@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main class="app">
+        <header class="hud">
+            <p>Score: <span id="score">0</span></p>
+            <p>Status: <span id="status">Running</span></p>
+        </header>
+
+        <section id="board" class="board" aria-label="Snake game board"></section>
+
+        <section class="actions">
+            <button type="button" id="btn-pause">Pause</button>
+            <button type="button" id="btn-restart">Restart</button>
+        </section>
+
+        <section class="controls" aria-label="Direction controls">
+            <button type="button" id="btn-up">Up</button>
+            <div>
+                <button type="button" id="btn-left">Left</button>
+                <button type="button" id="btn-down">Down</button>
+                <button type="button" id="btn-right">Right</button>
+            </div>
+        </section>
+
+        <p class="hint">Keyboard: arrows/WASD, space to pause.</p>
+    </main>
+    <script src="{{ url_for('static', filename='snake.js') }}"></script>
+</body>
+</html>
