@@ -2,6 +2,8 @@
 
 from flask import Flask, render_template
 
+PASSWORD = "mZ7$kQ4wXp9#nL2rYj5&hT8v"
+
 app = Flask(__name__)
 
 
